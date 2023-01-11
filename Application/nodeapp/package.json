@@ -1,0 +1,16 @@
+{
+    "name": "nodejs-image",
+    "version": "1.0.0",
+    "description": "nodejs image",
+    "author": "Sandeep Kumar Seeram <0x7330e18f93fac057d7bcb99c7021df03c799cab6@ethermail.io>",
+    "license": "MIT",
+    "main": "app.js",
+    "keywords": [
+    "nodejs",
+    "bootstrap",
+    "express"
+    ],
+    "dependencies": {
+    "express": "^4.16.4"
+    }
+    }
