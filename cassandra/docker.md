@@ -25,3 +25,12 @@ $ docker run -d --name my-cassandra --network cass-network cassandra
 4ddd26b26771313cf573a9afa759386cfe9366e86732975a2d1ec0bb41815a0b 
 
 
+docker start cassandra -p 9042:9042 
+
+
+$ docker exec -it my-cassandra cqlsh
+Connected to Test Cluster at 127.0.0.1:9042
+[cqlsh 6.1.0 | Cassandra 4.1.0 | CQL spec 3.4.6 | Native protocol v5]
+Use HELP for help.
+cqlsh> 
+cqlsh> 
