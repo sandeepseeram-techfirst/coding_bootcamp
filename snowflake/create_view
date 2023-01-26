@@ -5,3 +5,18 @@ Use SYSADMIN.
 Create a view named LOGS in the RAW schema. 
 
 Run a SELECT * on your new view and make sure it returns all 250 rows. Additionally, make sure your view has the same column headings shown here, and your data is formatted the same. The order of the columns doesn't matter but if other things don't look right, you'll need to make adjustments to your view definition. 
+
+
+
+select GRADER(step, (actual = expected), actual, expected, description) as graded_results from
+(
+ SELECT
+ 'DNGW01' as step
+  ,(
+      select count(*)  
+      from ags_game_audience.raw.logs
+      where is_timestamp_ntz(to_variant(datetime_iso8601))= TRUE 
+   ) as actual
+, 250 as expected
+, 'Project DB and Log File Set Up Correctly' as description
+); 
