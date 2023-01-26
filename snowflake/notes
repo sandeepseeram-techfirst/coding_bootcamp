@@ -12,3 +12,9 @@ COPY INTO statements
 Q. When writing a COPY INTO statement, what happens if you only use the name of the stage (or stage/folder) on the FROM line? 
 Snowflake will attempt to load all the files in the stage (or the stage/folder location) 
 
+Wrapping Selects in Views 
+To save a select statement and make it easier to use, we simply take the select, and wrap it in a CREATE VIEW statement.
+
+Like this: 
+
+CREATE VIEW my_view as (select x,y,z);
