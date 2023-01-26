@@ -4,3 +4,11 @@ Create a File Format
 2. Create a File Format in the AGS_GAME_AUDIENCE.RAW schema named FF_JSON_LOGS.
 3. Set the data file Type to JSON 
 4. Set the Strip Outer Array Property to TRUE   (strip_outer_array = true)
+
+
+Load the File Into The Table 
+COPY INTO statements 
+
+Q. When writing a COPY INTO statement, what happens if you only use the name of the stage (or stage/folder) on the FROM line? 
+Snowflake will attempt to load all the files in the stage (or the stage/folder location) 
+
