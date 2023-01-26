@@ -1,0 +1,7 @@
+[root@host01 ~]# docker run -d --net=host \
+>     -v /root/prometheus.yml:/etc/prometheus/prometheus.yml \
+>     --name prometheus-server \
+>     prom/prometheus
+49abe5a682010ed48f3b1836a265d87a27fb9b2289bbdc7bc46e795e51c5eee7
+[root@host01 ~]#  
+
