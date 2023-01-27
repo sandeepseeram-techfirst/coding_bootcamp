@@ -29,3 +29,18 @@ reverse-topic                                                                   
 strimzi-store-topic---effb8e3e057afce1ecf67c3f5d8e4e3ff177fc55                                     my-cluster   1            1                    True
 strimzi-topic-operator-kstreams-topic-store-changelog---b75e702040b99be8a9263134de3507fc0cc4017b   my-cluster   1            1                    True
 $ 
+
+
+$ kubectl create -f kafka-streams.yml
+deployment.apps/hello-world-streams created
+$ kubectl get pods
+NAME                                          READY   STATUS    RESTARTS   AGE
+hello-world-streams-79f858546-sgj5x           1/1     Running   0          74s
+my-cluster-entity-operator-5db6bc4679-4zwxr   3/3     Running   0          8m15s
+my-cluster-kafka-0                            1/1     Running   0          8m39s
+my-cluster-zookeeper-0                        1/1     Running   0          9m13s
+my-cluster-zookeeper-1                        1/1     Running   0          9m12s
+my-cluster-zookeeper-2                        1/1     Running   0          9m12s
+strimzi-cluster-operator-848bbcd8b5-28s4d     1/1     Running   0          10m
+
+
