@@ -1,0 +1,13 @@
+$ kubectl wait kafka/my-cluster --for=condition=Ready --timeout=300s -n kafka
+kafka.kafka.strimzi.io/my-cluster condition met
+
+
+$ kubectl get pods
+NAME                                          READY   STATUS    RESTARTS   AGE
+my-cluster-entity-operator-5db6bc4679-4zwxr   3/3     Running   0          27s
+my-cluster-kafka-0                            1/1     Running   0          51s
+my-cluster-zookeeper-0                        1/1     Running   0          85s
+my-cluster-zookeeper-1                        1/1     Running   0          84s
+my-cluster-zookeeper-2                        1/1     Running   0          84s
+strimzi-cluster-operator-848bbcd8b5-28s4d     1/1     Running   0          2m34s
+$ 
