@@ -11,3 +11,21 @@ my-cluster-zookeeper-1                        1/1     Running   0          84s
 my-cluster-zookeeper-2                        1/1     Running   0          84s
 strimzi-cluster-operator-848bbcd8b5-28s4d     1/1     Running   0          2m34s
 $ 
+
+
+$ kubectl create -f entry-topic.yml
+kafkatopic.kafka.strimzi.io/my-topic created
+
+
+$ kubectl create -f reverse-topic.yml
+kafkatopic.kafka.strimzi.io/reverse-topic created
+
+
+$ kubectl get Kafkatopic
+NAME                                                                                               CLUSTER      PARTITIONS   REPLICATION FACTOR   READY
+consumer-offsets---84e7a678d08f4bd226872e5cdd4eb527fadc1c6a                                        my-cluster   50           1                    True
+my-topic                                                                                           my-cluster   1            1                    True
+reverse-topic                                                                                      my-cluster   1            1                    True
+strimzi-store-topic---effb8e3e057afce1ecf67c3f5d8e4e3ff177fc55                                     my-cluster   1            1                    True
+strimzi-topic-operator-kstreams-topic-store-changelog---b75e702040b99be8a9263134de3507fc0cc4017b   my-cluster   1            1                    True
+$ 
