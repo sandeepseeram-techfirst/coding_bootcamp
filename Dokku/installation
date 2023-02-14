@@ -1,0 +1,10 @@
+Turn on the server firewall: 
+
+$ ufw allow OpenSSH
+Rules updated
+Rules updated (v6)
+
+$ ufw enable
+Command may disrupt existing ssh connections. Proceed with operation (y|n)? y
+Firewall is active and enabled on system startup
+$  
