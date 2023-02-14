@@ -1,0 +1,7 @@
+Create a Dokku app:
+
+dokku apps:create diamond 
+
+And enable VHOST:
+
+dokku domains:enable diamond
