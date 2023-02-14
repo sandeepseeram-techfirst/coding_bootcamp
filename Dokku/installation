@@ -8,3 +8,32 @@ $ ufw enable
 Command may disrupt existing ssh connections. Proceed with operation (y|n)? y
 Firewall is active and enabled on system startup
 $  
+
+$ sudo ufw default deny incoming
+Default incoming policy changed to 'deny'
+(be sure to update your rules accordingly)
+
+$ sudo ufw default allow outgoing
+Default outgoing policy changed to 'allow'
+(be sure to update your rules accordingly)
+
+$ sudo ufw allow ssh
+Rule added
+Rule added (v6)
+
+$ sudo ufw allow 22
+Skipping adding existing rule
+Skipping adding existing rule (v6)
+
+$ sudo ufw allow http
+Rule added
+Rule added (v6)
+
+$ sudo ufw allow https
+Rule added
+Rule added (v6)
+
+$ sudo ufw allow 5000
+Rule added
+Rule added (v6)
+$ 
