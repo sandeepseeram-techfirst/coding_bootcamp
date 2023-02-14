@@ -1,0 +1,87 @@
+[root@tomcat cloud_user]# sudo dnf install java-11-openjdk-devel
+
+Last metadata expiration check: 0:02:35 ago on Tue 14 Feb 2023 08:24:53 AM UTC.
+Dependencies resolved.
+================================================================================
+ Package                  Arch   Version       Repository                  Size
+================================================================================
+Installing:
+ java-11-openjdk-devel    x86_64 1:11.0.18.0.10-2.el8_7
+                                               rhel-8-appstream-rhui-rpms 3.4 M
+Installing dependencies:
+ copy-jdk-configs         noarch 4.0-2.el8     rhel-8-appstream-rhui-rpms  31 k
+ java-11-openjdk          x86_64 1:11.0.18.0.10-2.el8_7
+                                               rhel-8-appstream-rhui-rpms 468 k
+ java-11-openjdk-headless x86_64 1:11.0.18.0.10-2.el8_7
+                                               rhel-8-appstream-rhui-rpms  41 M
+ javapackages-filesystem  noarch 5.3.0-1.module+el8+2447+6f56d9a6
+                                               rhel-8-appstream-rhui-rpms  30 k
+ lksctp-tools             x86_64 1.0.18-3.el8  rhel-8-baseos-rhui-rpms    100 k
+ ttmkfdir                 x86_64 3.0.9-54.el8  rhel-8-appstream-rhui-rpms  62 k
+ tzdata-java              noarch 2022g-1.el8   rhel-8-appstream-rhui-rpms 185 k
+ xorg-x11-fonts-Type1     noarch 7.5-19.el8    rhel-8-appstream-rhui-rpms 522 k
+Enabling module streams:
+ javapackages-runtime            201801
+
+Transaction Summary
+================================================================================
+Install  9 Packages
+
+Total download size: 46 M
+Installed size: 185 M
+Is this ok [y/N]: y
+Downloading Packages:
+(1/9): javapackages-filesystem-5.3.0-1.module+e 864 kB/s |  30 kB     00:00
+(2/9): ttmkfdir-3.0.9-54.el8.x86_64.rpm         1.4 MB/s |  62 kB     00:00
+(3/9): copy-jdk-configs-4.0-2.el8.noarch.rpm    2.7 MB/s |  31 kB     00:00
+(4/9): tzdata-java-2022g-1.el8.noarch.rpm        11 MB/s | 185 kB     00:00
+(5/9): xorg-x11-fonts-Type1-7.5-19.el8.noarch.r 7.3 MB/s | 522 kB     00:00
+(6/9): java-11-openjdk-11.0.18.0.10-2.el8_7.x86 3.4 MB/s | 468 kB     00:00
+(7/9): lksctp-tools-1.0.18-3.el8.x86_64.rpm     6.7 MB/s | 100 kB     00:00
+(8/9): java-11-openjdk-devel-11.0.18.0.10-2.el8 8.8 MB/s | 3.4 MB     00:00
+(9/9): java-11-openjdk-headless-11.0.18.0.10-2.  17 MB/s |  41 MB     00:02
+--------------------------------------------------------------------------------
+Total                                            18 MB/s |  46 MB     00:02
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Running scriptlet: copy-jdk-configs-4.0-2.el8.noarch                                                                                                                                   1/1
+  Running scriptlet: java-11-openjdk-headless-1:11.0.18.0.10-2.el8_7.x86_64                                                                                                              1/1
+  Preparing        :                                                                                                                                                                     1/1
+  Installing       : lksctp-tools-1.0.18-3.el8.x86_64                                                                                                                                    1/9
+  Running scriptlet: lksctp-tools-1.0.18-3.el8.x86_64                                                                                                                                    1/9
+  Installing       : tzdata-java-2022g-1.el8.noarch                                                                                                                                      2/9
+  Installing       : copy-jdk-configs-4.0-2.el8.noarch                                                                                                                                   3/9
+  Installing       : ttmkfdir-3.0.9-54.el8.x86_64                                                                                                                                        4/9
+  Installing       : xorg-x11-fonts-Type1-7.5-19.el8.noarch                                                                                                                              5/9
+  Running scriptlet: xorg-x11-fonts-Type1-7.5-19.el8.noarch                                                                                                                              5/9
+  Installing       : javapackages-filesystem-5.3.0-1.module+el8+2447+6f56d9a6.noarch                                                                                                     6/9
+  Installing       : java-11-openjdk-headless-1:11.0.18.0.10-2.el8_7.x86_64                                                                                                              7/9
+  Running scriptlet: java-11-openjdk-headless-1:11.0.18.0.10-2.el8_7.x86_64                                                                                                              7/9
+  Installing       : java-11-openjdk-1:11.0.18.0.10-2.el8_7.x86_64                                                                                                                       8/9
+  Running scriptlet: java-11-openjdk-1:11.0.18.0.10-2.el8_7.x86_64                                                                                                                       8/9
+  Installing       : java-11-openjdk-devel-1:11.0.18.0.10-2.el8_7.x86_64                                                                                                                 9/9
+  Running scriptlet: java-11-openjdk-devel-1:11.0.18.0.10-2.el8_7.x86_64                                                                                                                 9/9
+  Running scriptlet: copy-jdk-configs-4.0-2.el8.noarch                                                                                                                                   9/9
+  Running scriptlet: java-11-openjdk-headless-1:11.0.18.0.10-2.el8_7.x86_64                                                                                                              9/9
+  Running scriptlet: java-11-openjdk-1:11.0.18.0.10-2.el8_7.x86_64                                                                                                                       9/9
+  Running scriptlet: java-11-openjdk-devel-1:11.0.18.0.10-2.el8_7.x86_64                                                                                                                 9/9
+  Verifying        : javapackages-filesystem-5.3.0-1.module+el8+2447+6f56d9a6.noarch                                                                                                     1/9
+  Verifying        : xorg-x11-fonts-Type1-7.5-19.el8.noarch                                                                                                                              2/9
+  Verifying        : ttmkfdir-3.0.9-54.el8.x86_64                                                                                                                                        3/9
+  Verifying        : copy-jdk-configs-4.0-2.el8.noarch                                                                                                                                   4/9
+  Verifying        : tzdata-java-2022g-1.el8.noarch                                                                                                                                      5/9
+  Verifying        : java-11-openjdk-devel-1:11.0.18.0.10-2.el8_7.x86_64                                                                                                                 6/9
+  Verifying        : java-11-openjdk-headless-1:11.0.18.0.10-2.el8_7.x86_64                                                                                                              7/9
+  Verifying        : java-11-openjdk-1:11.0.18.0.10-2.el8_7.x86_64                                                                                                                       8/9
+  Verifying        : lksctp-tools-1.0.18-3.el8.x86_64                                                                                                                                    9/9
+
+Installed:
+  copy-jdk-configs-4.0-2.el8.noarch                           java-11-openjdk-1:11.0.18.0.10-2.el8_7.x86_64                        java-11-openjdk-devel-1:11.0.18.0.10-2.el8_7.x86_64
+  java-11-openjdk-headless-1:11.0.18.0.10-2.el8_7.x86_64      javapackages-filesystem-5.3.0-1.module+el8+2447+6f56d9a6.noarch      lksctp-tools-1.0.18-3.el8.x86_64
+  ttmkfdir-3.0.9-54.el8.x86_64                                tzdata-java-2022g-1.el8.noarch                                       xorg-x11-fonts-Type1-7.5-19.el8.noarch
+
+Complete!
+[root@tomcat cloud_user]#
