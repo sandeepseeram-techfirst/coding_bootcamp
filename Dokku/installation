@@ -37,3 +37,10 @@ $ sudo ufw allow 5000
 Rule added
 Rule added (v6)
 $ 
+
+
+#### Dokku Installation 
+
+
+wget https://raw.githubusercontent.com/dokku/dokku/v0.20.0/bootstrap.sh
+sudo DOKKU_TAG=v0.20.0 bash bootstrap.sh 
